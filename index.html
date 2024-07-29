@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: palegoldenrod; 
+        }
+
+        h1{
+            color: aliceblue;
+            text-align: center;
+            background-color: black;
+            padding: 10px;margin: 0;
+            width:100%;padding: 10px;
+            font-size: xx-large;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            width:80%;
+            height:70%;
+            background-color: aliceblue;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            display: block; 
+        }
+        .box-1{
+            width:100%;
+            height:55%;
+            margin-bottom: 30px;
+        }
+        .Info{
+            width:100%;
+            height:25%;
+            margin-top:15px;
+            font-size:medium;
+            font-weight: bolder;
+            padding: 5px;
+            text-align: center;
+        }
+        .Logo{
+            width:100%;
+            height:60%;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        img{
+            width:50%;
+            height:100%;
+            border-radius: 10px;
+        }
+        .Stars{
+            font-size: medium;
+            font-family: sans-serif;
+        }
+        .Stars p{
+            color: rgb(136, 134, 134);
+            margin: 10px;
+        }
+        .Stars .checked{
+            color: green;
+        }
+
+        @media screen and (min-width:768px) {
+            .container{
+                display: flex;
+                flex-direction: row;
+                width:100vw;
+                height:100vh;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center; 
+            }
+            h1{
+                color: aliceblue;
+                text-align: center;
+                background-color: black;
+                padding: 10px;margin: 0;
+                position:fixed;width:100%;padding: 10px;
+                font-size: xx-large;
+            }
+            .box{
+                width:28%;
+                height:35%;
+                text-align: left;
+                padding: 10px; 
+            }
+            .box-1{
+                width:100%;
+                height:60%;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom:10px;padding: 15px;
+            }
+            .Stars{
+                width:70%;
+                height:50%;
+                margin-top:20px;
+                font-size: 1rem;
+            }
+            .Stars p{
+            color: rgb(136, 134, 134);
+            margin: 5px 0px
+            }
+            .Logo{
+                width:50%;
+                height:100%;
+            }
+            img{
+                width:80%;
+                height:80%
+            }
+            .Info{
+            width:100%;
+            height:25%;
+            font-size:medium;
+            font-weight: bolder;
+            text-align: left;
+            margin: 0;
+            padding:0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Stripee.jpg" >
+                </div>
+                <div class="Stars">
+                    <h4>Stripe</h4>
+                    <p>Payment Services</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Get more context on your users with stripe data inside our platform</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Mailchimp.jpeg" >
+                </div>
+                <div class="Stars">
+                    <h4>Mailchimp</h4>
+                    <p>Project Management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Capture and sync subscribers from your mailchimp platform to ours with ease</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Dropbox.svg" >
+                </div>
+                <div class="Stars">
+                    <h4>Dropbox</h4>
+                    <p>File Management</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Use dropbox to sync your photos to our platform and share it with others</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Shopify.png" >
+                </div>
+                <div class="Stars">
+                    <h4>Shopify</h4>
+                    <p>Ecommerce</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Sell your items with ease with having any website with our free platform</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Atlassian.png" >
+                </div>
+                <div class="Stars">
+                    <h4>Atlassian</h4>
+                    <p>Project Mangement</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Developing products for Developers,project managers and architects</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-1">
+                <div class="Logo">
+                    <img src="./Flexbox UI Images/Salesforce.png" class="salesforce">
+                </div>
+                <div class="Stars">
+                    <h4>Salesforce</h4>
+                    <p>Project Mangement</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="Info">
+                <p>Developing Products for developers, project mangers and architects</p>
+            </div>
+        </div>
+          
+    </div>
+</body>
+</html>
